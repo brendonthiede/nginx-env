@@ -3,8 +3,6 @@
 echo "ENVIRONMENT: $ENVIRONMENT"
 
 envsubst '${ENVIRONMENT}' < /index.html.template > /usr/share/nginx/html/index.html
-envsubst '${ENVIRONMENT}' < /default.conf.template > /etc/nginx/conf.d/default.conf
-
 
 CONFIG_FILE="/ngconfig/$ENVIRONMENT.config.js"
 
